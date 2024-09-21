@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Spook-game.sln"
+    "dotnet.defaultSolution": "Spook.sln"
 }
