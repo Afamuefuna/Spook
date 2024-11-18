@@ -96,7 +96,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("Level Completed");
 
         PlayerController playerController = FindAnyObjectByType<PlayerController>();
-        playerController.rb.bodyType = RigidbodyType2D.Static;
         
         uIManager.Transition(uIManager.levelCompleteView);
         LevelCompleteView levelCompleteView = uIManager.levelCompleteView.GetComponent<LevelCompleteView>();
