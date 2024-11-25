@@ -25647,10 +25647,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
+  - name: MenuMusic
+    clip: {fileID: 8300000, guid: a8c17f9be23034f9185033620114b592, type: 3}
+    volume: 0.35
     pitch: 0.1
+    loop: 1
+    source: {fileID: 608205100}
+  - name: PlayMusic
+    clip: {fileID: 8300000, guid: 8bd4310757313423995df003a14b8e8e, type: 3}
+    volume: 0.7
+    pitch: 0.1
+    loop: 1
+    source: {fileID: 608205100}
+  - name: CoinPickup
+    clip: {fileID: 8300000, guid: 24d7f322cae9844969ca32cc90ae0d8c, type: 3}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    source: {fileID: 608205100}
+  - name: LevelLose
+    clip: {fileID: 8300000, guid: 4114ff58b6603475f87800ebe35b3f93, type: 3}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    source: {fileID: 608205100}
+  - name: LevelWin
+    clip: {fileID: 8300000, guid: 0e6efd31a53104897993f10a80d0298d, type: 3}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    source: {fileID: 608205100}
+  - name: Land
+    clip: {fileID: 8300000, guid: eacb0d0df420d4dd0a628fe76f83673e, type: 3}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    source: {fileID: 608205100}
+  - name: Hurt
+    clip: {fileID: 8300000, guid: 16c6cb6476fc64b57883c552416a9bb8, type: 3}
+    volume: 0.7
+    pitch: 1
     loop: 0
     source: {fileID: 608205100}
   masterVolume: 1

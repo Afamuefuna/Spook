@@ -17,6 +17,7 @@ public class Checkpoint : MonoBehaviour
 
             if(isFinishLine)
             {
+                AudioManager.Instance.StopMusic();
                 GameManager.Instance.CompleteLevel();
             }
         }

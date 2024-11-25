@@ -10,6 +10,8 @@ public class MenuView : UIView
 
     public override void Show(){
         base.Show();
+
+        AudioManager.Instance.PlayMusic(BackgroundMusic.MENU_MUSIC);
     }
 
     public override void Hide(){

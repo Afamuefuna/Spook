@@ -111,7 +111,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayMusic(string name, float fadeTime = 1f)
+    public void PlayMusic(string name, float fadeTime = 0.25f)
     {
         if (soundDictionary.TryGetValue(name, out Sound sound))
         {
@@ -145,6 +145,8 @@ public class AudioManager : MonoBehaviour
         musicSource.loop = true;
         currentMusic = newMusic;
         musicSource.Play();
+
+        Debug.Log("Playing music: " + newMusic.name);
 
         // Fade in new music
         t = 0;

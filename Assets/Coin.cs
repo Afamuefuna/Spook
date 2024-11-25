@@ -37,6 +37,7 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            AudioManager.Instance.PlaySound(SoundEffect.COIN_PICKUP);
             StartCoroutine(MoveToUIPosition());
         }
     }

@@ -70,6 +70,7 @@ public class PlayerController : MonoBehaviour
         if(isGrounded){
             if(!hasPlayedGroundEffect){
                 groundParticle.Play();
+                AudioManager.Instance.PlaySound(SoundEffect.LAND);
                 hasPlayedGroundEffect = true;
             }
         }else{

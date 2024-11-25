@@ -117,6 +117,8 @@ public class GameManager : MonoBehaviour
             levelCompleteView.resultText.text = "VICTORY";
             levelManager.levels[levelManager.currentLevel].hasCompleted = true;
             
+            AudioManager.Instance.PlaySound(SoundEffect.LEVEL_WIN);
+
             if (levelManager.currentLevel + 1 < levelManager.levels.Count)
             {
                 levelManager.levels[levelManager.currentLevel + 1].isLocked = false;
@@ -124,6 +126,8 @@ public class GameManager : MonoBehaviour
             }
         }else{
             levelCompleteView.resultText.text = "GAME OVER";
+
+            AudioManager.Instance.PlaySound(SoundEffect.LEVEL_LOSE);
             levelManager.levels[levelManager.currentLevel].hasCompleted = false;
         }
 

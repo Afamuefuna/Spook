@@ -38,6 +38,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (isInvincible) return;
 
+        AudioManager.Instance.PlaySound(SoundEffect.HURT);
         GameManager.Instance.currentHealth -= damage;
         GameManager.Instance.UpdateHealthDisplay();
 
