@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
     public int currentLevel;
     public List<GameObject> levelEnvironments;
     public GameObject levelParent;
+    public SpriteRenderer backgroundSpriteRenderer;
 
     void Start()
     {
@@ -22,6 +23,8 @@ public class LevelManager : MonoBehaviour
         }
 
         Instantiate(levelEnvironments[currentLevel], levelParent.transform);
+
+        backgroundSpriteRenderer.sprite = levels[currentLevel].backgroundSprite;
     }
 }
 
@@ -35,4 +38,5 @@ public class Level
     public bool hasCompleted;
     public bool isLocked;
     public Vector3 levelStartPosition;
+    public Sprite backgroundSprite;
 }
